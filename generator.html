@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Time Table Generator</title>
+  <link rel="stylesheet" href="generate.css">
+</head>
+<body>
+  <header>
+    <h1>📅 School Time Table Generator</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Create Your Timetable</h2>
+      <form id="timeTableForm">
+        <label>No. of Days:</label>
+        <input type="number" id="days" ><br>
+
+        <label>Classes per day:</label>
+        <input type="number" id="periods" ><br>
+
+        <label>Subjects (comma-separated):</label>
+        <input type="text" id="subjects" ><br>
+        
+        <label>No. of Classes:</label>
+        <input type="number" id="classes" ><br>
+
+        <label>No. of Teachers:</label>
+        <input type="number" id="teachers" ><br>
+
+        <button type="submit" class="btn">Generate Timetable</button>
+        <button type="button" class="btn" onclick="resetTable()">Reset</button>
+     <a href="index.html"> <button type="button" class="btn">back to home</button></a>
+
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Generated Timetable</h2>
+      <div id="resultTable"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  
+</body>
+</html>
